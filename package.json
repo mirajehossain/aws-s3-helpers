@@ -12,10 +12,12 @@
     "url": "git+https://github.com/mirajehossain/aws-s3-helpers.git"
   },
   "keywords": [
-    "s3",
+    "aws-s3",
     "recursive-download",
     "zip",
-    "upload"
+    "upload",
+    "npm",
+    "node"
   ],
   "author": "Md. Alamin",
   "license": "MIT",
