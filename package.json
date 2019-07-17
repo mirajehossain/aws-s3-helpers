@@ -1,0 +1,29 @@
+{
+  "name": "aws-s3-helpers",
+  "version": "1.0.0",
+  "description": "aws s3 download, upload, zip and many more",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirajehossain/aws-s3-helpers.git"
+  },
+  "keywords": [
+    "s3",
+    "recursive-download",
+    "zip",
+    "upload"
+  ],
+  "author": "Md. Alamin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirajehossain/aws-s3-helpers/issues"
+  },
+  "homepage": "https://github.com/mirajehossain/aws-s3-helpers#readme",
+  "dependencies": {
+    "aws-sdk": "^2.493.0"
+  }
+}
