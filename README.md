@@ -4,7 +4,7 @@
 
 **AWS S3 download, upload, zip and many more** ✨
 
-**install: ` npm i --save aws-s3-helpers `**
+```install: npm i --save aws-s3-helpers ```
 
 # Features
 
@@ -12,6 +12,18 @@
 * **Download S3 Folders as zip** - [future]
 * **Upload multiple file and folder in S3** - [future]
 
+# Download functions
+```js
+const S3Helpers = require('aws-s3-helpers');
+
+const s3Helpers = new S3Helpers.Download({
+  secretAccessKey: '',
+  accessKeyId: '',
+  region: '', 
+  downloadPath: 'downloadFolder'
+});
+s3Helpers.downloadS3Folder('bucketName', 'bucketFolderURLForDownloadContent');
+```
 
 # License
 
