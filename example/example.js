@@ -1,10 +1,12 @@
 const s3Helper = require('aws-s3-helpers');
 
-const download = new s3Helper.Download({
+const config = {
   secretAccessKey: '',
   accessKeyId: '',
-  region: 'us-east-1', 
-  downloadPath: 'downloadFolder'
-})
+  region: '',
+  outputDir: ''
+}
 
-download.downloadS3Folder('bucketName', 'bucketFolderURLForDownloadContent')
+  const download = new Helper.Download(config);
+
+  download.downloadS3Folder('bucketName', 'bucket/folder/path')
