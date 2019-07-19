@@ -8,22 +8,26 @@
 
 # Features
 
-* **Download S3 Folders** - Recursive download including multiple file and folders
-* **Download S3 Folders as zip** - [future]
-* **Upload multiple file and folder in S3** - [future]
+* **Download S3 Folders** - Download S3 nested files and folders 
 
-# Download functions
+# Examples
 ```js
 const S3Helpers = require('aws-s3-helpers');
 
-const s3Helpers = new S3Helpers.Download({
-  secretAccessKey: '',
-  accessKeyId: '',
-  region: '', 
-  downloadPath: 'downloadFolder'
-});
-s3Helpers.downloadS3Folder('bucketName', 'bucketFolderURLForDownloadContent');
+  const config = {
+    secretAccessKey: '',
+    accessKeyId: '',
+    region: '',
+  }
+
+  const download = new S3Helpers.Download(config);
+
+  download.downloadS3Folder('bucketName', 'bucket/folder/path', 'outputDir');
 ```
+
+# TODO
+* **Download S3 Folders as zip**
+* **Upload multiple file and folder in S3**
 
 # License
 
