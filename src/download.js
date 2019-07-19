@@ -36,7 +36,7 @@ module.exports = function({ secretAccessKey, accessKeyId, region }) {
 
       if (CommonPrefixes.length) {
         await Promise.all(CommonPrefixes.map(async (element) => {
-          await this.downloadS3Folder(Name, element.Prefix);
+          await this.downloadS3Folder(Name, element.Prefix, outputDir);
         }));
       }
 
