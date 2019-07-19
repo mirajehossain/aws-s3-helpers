@@ -1,10 +1,10 @@
 const S3Helpers = require('aws-s3-helpers');
 
-const config = {
-  secretAccessKey: '',
-  accessKeyId: '',
-  region: '',
-}
+  const config = {
+    secretAccessKey: '',
+    accessKeyId: '',
+    region: '',
+  }
 
   const download = new S3Helpers.Download(config);
 
