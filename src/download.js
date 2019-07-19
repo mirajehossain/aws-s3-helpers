@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 const fs = require('fs');
 
-module.exports = function({ secretAccessKey, accessKeyId, region, outputDir}) {
+module.exports = function({ secretAccessKey, accessKeyId, region }) {
   AWS.config.update({
     secretAccessKey,
     accessKeyId,
@@ -11,7 +11,7 @@ module.exports = function({ secretAccessKey, accessKeyId, region, outputDir}) {
   AWS.config.setPromisesDependency(Promise);
   const s3 = new AWS.S3();
 
-  this.downloadS3Folder = async function(bucket, prefix) {
+  this.downloadS3Folder = async function(bucket, prefix, outputDir) {
     try {
       const paramsForListObjects = {
         Bucket: bucket,
