@@ -36,7 +36,7 @@ const S3Helpers = require('aws-s3-helpers');
 
 ## Contributors
 
-- Md. Alamin [@garciparedes](https://mirajehossain.com)
+- Md. Alamin [@mirajehossain](http://linkedin.com/in/mirajehossain)
 
 ## Changelog
 See [changelog](https://github.com/mirajehossain/aws-s3-helpers/releases) page to get info about release changes.
