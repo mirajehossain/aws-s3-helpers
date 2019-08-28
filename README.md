@@ -1,16 +1,19 @@
-# AWS S3 Helpers
+## AWS S3 Helpers
+
+[![npm](https://img.shields.io/npm/v/aws-s3-helpers.svg)](https://www.npmjs.com/package/aws-s3-helpers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-
+ 
+### Description
 **AWS S3 download, upload, zip and many more** ✨
 
 ```install: npm i --save aws-s3-helpers ```
 
-# Features
+## Features
 
 * **Download S3 Folders** - Download S3 nested files and folders 
 
-# Examples
+## Examples
 ```js
 const S3Helpers = require('aws-s3-helpers');
 
@@ -25,10 +28,23 @@ const S3Helpers = require('aws-s3-helpers');
   download.downloadS3Folder('bucketName', 'bucket/folder/path', 'outputDir');
 ```
 
-# TODO
+## TODO
 * **Download S3 Folders as zip**
 * **Upload multiple file and folder in S3**
+* **and so on**
 
-# License
+
+## Contributors
+
+- Md. Alamin [@garciparedes](https://mirajehossain.com)
+
+## Changelog
+See [changelog](https://github.com/mirajehossain/aws-s3-helpers/releases) page to get info about release changes.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
 
 MIT © Md. Alamin
